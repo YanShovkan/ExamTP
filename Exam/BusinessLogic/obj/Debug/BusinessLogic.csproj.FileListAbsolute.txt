@@ -1,0 +1,5 @@
+C:\Users\shovk\source\repos\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\shovk\source\repos\BusinessLogic\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\shovk\source\repos\BusinessLogic\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\shovk\source\repos\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\shovk\source\repos\BusinessLogic\BusinessLogic\obj\Debug\BusinessLogic.pdb
