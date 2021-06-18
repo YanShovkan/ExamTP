@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Json;
+using System.Threading.Tasks;
 
 namespace BusinessLogic.BuisnessLogic
 {
@@ -37,13 +38,16 @@ namespace BusinessLogic.BuisnessLogic
             }
             return list;
         }
-        public void SaveJSONDataContract(ProductBindingModel model)
+        public async void SaveJSONDataContract(ProductBindingModel model)
         {
-            DataContractJsonSerializer formatter = new DataContractJsonSerializer(typeof(List<ReportViewModel>));
-            using (FileStream fs = new FileStream("otchet.json", FileMode.OpenOrCreate))
+            await Task.Run(() =>
             {
-                formatter.WriteObject(fs, GetOrders(model));
-            }
+                DataContractJsonSerializer formatter = new DataContractJsonSerializer(typeof(List<ReportViewModel>));
+                using (FileStream fs = new FileStream("otchet.json", FileMode.OpenOrCreate))
+                {
+                    formatter.WriteObject(fs, GetOrders(model));
+                }
+            });
         }
     }
 }
